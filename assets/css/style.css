@@ -1,0 +1,143 @@
+:root {
+  --bg: #fdfcfb;
+  --primary: #a3c9a8;  /* Pistachio green */
+  --accent: #8d7964;   /* Coffee */
+  --text-dark: #3a3a3a;
+  --text-soft: #777;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--text-dark) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-dark) !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Hero / Slider */
+.carousel-caption h3,
+.carousel-caption p {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Tombol */
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #7b6652;
+}
+
+/* Section Keunggulan */
+.feature-icon {
+  font-size: 36px;
+  color: var(--accent);
+}
+
+section {
+  background-color: var(--white);
+}
+
+h2, h3 {
+  color: var(--text-dark);
+}
+
+/* Produk Unggulan */
+.product-highlight img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.product-highlight h3 {
+  font-weight: bold;
+}
+
+blockquote {
+  border-left: 5px solid var(--primary);
+  font-style: italic;
+}
+
+/* CTA */
+.cta-section {
+  background-color: var(--primary);
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.cta-section .btn {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.cta-section .btn:hover {
+  background-color: #7b6652;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  padding: 20px 0;
+  color: var(--text-dark);
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Card Produk (di halaman produk.php misalnya) */
+.card-produk {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-produk:hover {
+  transform: translateY(-4px);
+}
+
+/* Gambar produk */
+.card-produk img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Keranjang */
+.keranjang-item {
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.keranjang-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
